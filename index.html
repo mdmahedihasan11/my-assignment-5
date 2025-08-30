@@ -167,7 +167,77 @@
           <button class="call-btn bg-green-600 text-white px-3 py-1 rounded text-xs flex-1"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
+<!-- বিদ্যুৎ বিভ্রাট -->
+      <div class="service-card bg-white rounded-2xl shadow p-4 flex flex-col justify-between"
+           data-title="বিদ্যুৎ বিভ্রাট" data-number="16216">
+        <div>
+          <div class="flex justify-between items-start">
+            <img src="assets/emergency.png" alt="icon" class="w-10 h-10">
+            <button class="heart-btn text-gray-400">🤍</button>
+          </div>
+          <h3 class="font-bold text-base mt-2">বিদ্যুৎ বিভ্রাট</h3>
+          <p class="text-sm text-gray-500">Electricity Outage</p>
+          <p class="text-2xl font-bold mt-2">16216</p>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">বিদ্যুৎ</span>
+        </div>
+        <div class="flex justify-between items-center mt-4 space-x-2">
+          <button class="copy-btn border rounded px-3 py-1 text-xs flex-1"><i class="fa-solid fa-copy"></i> Copy</button>
+          <button class="call-btn bg-green-600 text-white px-3 py-1 rounded text-xs flex-1"><i class="fa-solid fa-phone"></i>Call</button>
+        </div>
+      </div>
+      <!-- ব্র্যাক -->
+      <div class="service-card bg-white rounded-2xl shadow p-4 flex flex-col justify-between"
+           data-title="ব্র্যাক" data-number="16445">
+        <div>
+          <div class="flex justify-between items-start">
+            <img src="assets/brac.png" alt="icon" class="w-10 h-10">
+            <button class="heart-btn text-gray-400">🤍</button>
+          </div>
+          <h3 class="font-bold text-base mt-2">ব্র্যাক</h3>
+          <p class="text-sm text-gray-500">Brac</p>
+          <p class="text-2xl font-bold mt-2">16445</p>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">এনজিও</span>
+        </div>
+        <div class="flex justify-between items-center mt-4 space-x-2">
+          <button class="copy-btn border rounded px-3 py-1 text-xs flex-1"> <i class="fa-solid fa-copy"></i>Copy</button>
+          <button class="call-btn bg-green-600 text-white px-3 py-1 rounded text-xs flex-1"><i class="fa-solid fa-phone"></i>Call</button>
+        </div>
+      </div>
 
+<!-- বাংলাদেশ রেলওয়ে -->
+      <div class="service-card bg-white rounded-2xl shadow p-4 flex flex-col justify-between"
+           data-title="বাংলাদেশ রেলওয়ে"  data-number="163">
+        <div>
+          <div class="flex justify-between items-start">
+            <img src="assets/Bangladesh-Railway.png" alt="icon" class="w-10 h-10">
+            <button class="heart-btn text-gray-400">🤍</button>
+          </div>
+          <h3 class="font-bold text-base mt-2">বাংলাদেশ রেলওয়ে</h3>
+          <p class="text-sm text-gray-500">Bangladesh Railway</p>
+          <p class="text-2xl font-bold mt-2">163</p>
+          <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">পরিবহন</span>
+        </div>
+        <div class="flex justify-between items-center mt-4 space-x-2">
+          <button class="copy-btn border rounded px-3 py-1 text-xs flex-1"><i class="fa-solid fa-copy"></i>Copy</button>
+          <button class="call-btn bg-green-600 text-white px-3 py-1 rounded text-xs flex-1"><i class="fa-solid fa-phone"></i> Call</button>
+        </div>
+      </div>
+
+
+    </div>
+
+      <!-- Call History -->
+    <aside class="w-full lg:w-72 bg-white rounded-2xl shadow p-4">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold text-lg"> <i class="fa-solid fa-clock-rotate-left"></i>Call History</h3>
+        <button id="clearHistory" class="bg-green-500 px-3 py-1 rounded-2xl text-white">Clear</button>
+      </div>
+      <ul id="callHistory" class="space-y-3 text-gray-700 text-sm">
+        <li class="text-gray-400">No recent calls</li>
+      </ul>
+    </aside>
+
+  </div>
 
   <script src="script.js"></script>
   </main>

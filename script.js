@@ -47,5 +47,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  
+  //  Call
+  document.querySelectorAll(".call-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (coins < 20) {
+        alert("Not enough coins to make a call!");
+        return;
+      }
+
+      const card = btn.closest(".service-card");
+      const title = card?.dataset.title || "Unknown Service";
+      const number = card?.dataset.number || "N/A";
+
+      alert(`Calling ${title} at ${number}`);
+
+      coins = Math.max(0, coins - 20);
+      coinCount.textContent = coins;
+
+      //  Add Call to History
+
+ const time = new Date().toLocaleTimeString();
+      if (callHistory.firstElementChild?.textContent === "No recent calls") {
+        callHistory.innerHTML = "";
+      }
+
+      const li = document.createElement("li");
+      li.className = "flex justify-between items-center border-b pb-1"; // flex row layout
+      li.innerHTML = `
+        <div>
+          <span class="font-semibold">${title}</span> <br> ${number}
+        </div>
+        <span class="text-gray-500 text-xs">${time}</span>
+      `;
+      callHistory.prepend(li);
+    });
+  }); 
+
+  //  Clear History
+  clearHistory.addEventListener("click", () => {
+    callHistory.innerHTML = `<li class="text-gray-400">No recent calls</li>`;
+  });
 });
