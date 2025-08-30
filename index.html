@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="bg-green-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white flex justify-between items-center">
+    <div class="flex items-center space-x-1">
+      <img src="assets/logo.png"alt="BD Emblem" class=" w-14 mb-2">
+      <span class=" text-emerald-900 font-bold text-lg">Emergency<br>Service</span>
+     
+    </div>
+    <div class="flex items-center space-x-6">
+      <!--  Heart -->
+      <span class="flex items-center gap-1 bg-green-100 px-3 py-1 rounded-2xl">
+        <span id="heartCount" class="text-gray-700 font-bold">0</span>
+        <span class="text-red-600 text-lg">❤️</span>
+      </span>
+     
+      <!-- Coins -->
+      <span class="flex items-center gap-1 bg-green-100 px-3 py-1 rounded-2xl">
+        <span id="coinCount" class="text-gray-700 font-bold">100</span>
+        <span class="text-yellow-50 text-lg"><img src="assets/coin.png" alt="" class=" w-5 " ></span>
+      </span>
+       <!--  Copy -->
+      <span class="flex items-center gap-1 bg-green-500 px-3 py-1 rounded-2xl">
+        <span id="copyCount" class="text-white font-bold">0</span>
+        <span class="text-white font-semi-bold"> Copy</span>
+
+      </span>
+    </div>
+  </header>
+     
+  <script src="script.js"></script>
+  </main>
+</body>
+</html>     
