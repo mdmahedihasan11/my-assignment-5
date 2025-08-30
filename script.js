@@ -29,5 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
- 
+  //  Copy
+  document.querySelectorAll(".copy-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".service-card");
+      const number = card?.dataset.number;
+
+      if (!number) return;
+
+      navigator.clipboard.writeText(number).then(() => {
+        copies++;
+        copyCountEl.textContent = copies;
+        alert(`Copied: ${number}`);
+      }).catch(() => {
+        alert("Failed to copy!");
+      });
+    });
+  });
+
+  
 });
